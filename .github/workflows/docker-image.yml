@@ -33,9 +33,9 @@ jobs:
       with:
         images: gigantosaurio/aws:car-web
         flavor: |
-          latest=false
+          latest=true
         tags: |
-          type=raw,value=
+          type=raw,value=latest
 
     - name: Build and Push to Docker Hub
       id: docker_build
